@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7DA6666F-FD66-4B2E-A02F-E85FE267731C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Workflow</RootNamespace>
+    <AssemblyName>Workflow</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WencorPOReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WencorPOReview.Designer.cs">
+      <DependentUpon>WencorPOReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignTaskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignTaskForm.Designer.cs">
+      <DependentUpon>AssignTaskForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommentDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommentDialog.Designer.cs">
+      <DependentUpon>CommentDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractReviewCheckList _ME.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContractReviewCheckList _ME.Designer.cs">
+      <DependentUpon>ContractReviewCheckList _ME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractReviewCheckList _QE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContractReviewCheckList _QE.Designer.cs">
+      <DependentUpon>ContractReviewCheckList _QE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractReviewCheckList_QA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContractReviewCheckList_QA.Designer.cs">
+      <DependentUpon>ContractReviewCheckList_QA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUserForm.Designer.cs">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Globals.cs" />
+    <Compile Include="GenericPOReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenericPOReview.Designer.cs">
+      <DependentUpon>GenericPOReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EatonPOReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EatonPOReview.Designer.cs">
+      <DependentUpon>EatonPOReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AblePOReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AblePOReview.Designer.cs">
+      <DependentUpon>AblePOReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WoodwardPOReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WoodwardPOReview.Designer.cs">
+      <DependentUpon>WoodwardPOReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RollsRoycePOReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RollsRoycePOReview.Designer.cs">
+      <DependentUpon>RollsRoycePOReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HondaPOReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HondaPOReview.Designer.cs">
+      <DependentUpon>HondaPOReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobListViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobListViewer.Designer.cs">
+      <DependentUpon>JobListViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInForm.designer.cs">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordHash.cs" />
+    <Compile Include="QuickReleaseForm_Engineering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuickReleaseForm_Engineering.Designer.cs">
+      <DependentUpon>QuickReleaseForm_Engineering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuickReleaseForm_Quality.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuickReleaseForm_Quality.Designer.cs">
+      <DependentUpon>QuickReleaseForm_Quality.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatusPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatusPage.Designer.cs">
+      <DependentUpon>StatusPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskViewer.Designer.cs">
+      <DependentUpon>TaskViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserRegistrationForm.Designer.cs">
+      <DependentUpon>UserRegistrationForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="WencorPOReview.resx">
+      <DependentUpon>WencorPOReview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignTaskForm.resx">
+      <DependentUpon>AssignTaskForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommentDialog.resx">
+      <DependentUpon>CommentDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractReviewCheckList _ME.resx">
+      <DependentUpon>ContractReviewCheckList _ME.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractReviewCheckList _QE.resx">
+      <DependentUpon>ContractReviewCheckList _QE.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractReviewCheckList_QA.resx">
+      <DependentUpon>ContractReviewCheckList_QA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUserForm.resx">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenericPOReview.resx">
+      <DependentUpon>GenericPOReview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EatonPOReview.resx">
+      <DependentUpon>EatonPOReview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AblePOReview.resx">
+      <DependentUpon>AblePOReview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WoodwardPOReview.resx">
+      <DependentUpon>WoodwardPOReview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RollsRoycePOReview.resx">
+      <DependentUpon>RollsRoycePOReview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HondaPOReview.resx">
+      <DependentUpon>HondaPOReview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobListViewer.resx">
+      <DependentUpon>JobListViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInForm.resx">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickReleaseForm_Engineering.resx">
+      <DependentUpon>QuickReleaseForm_Engineering.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickReleaseForm_Quality.resx">
+      <DependentUpon>QuickReleaseForm_Quality.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="StatusPage.resx">
+      <DependentUpon>StatusPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskViewer.resx">
+      <DependentUpon>TaskViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRegistrationForm.resx">
+      <DependentUpon>UserRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Comment-add-icon.png" />
+    <Content Include="comment-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
